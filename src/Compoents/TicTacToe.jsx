@@ -63,16 +63,16 @@ function TicTacToe() {
   };
 
   const boardStyle =
-    "lg:w-96 lg:h-80 w-80 h-80 mx-auto flex justify-center items-center lg:mt-10 ";
+    "lg:w-96 lg:h-80 w-60 h-60 mx-auto flex justify-center items-center lg:mt-10 mb-0";
 
   const cellStyle =
-    "lg:w-28 lg:h-28 w-24 h-24 bg-[white] border-solid border-4 border-[#687c80] cursor-pointer flex justify-center items-center rounded-lg";
+    "lg:w-28 lg:h-28 w-16 h-16 bg-[white] border-solid border-4 border-[#687c80] cursor-pointer flex justify-center items-center rounded-lg";
 
   const iconStyle = "w-3/5 h-3/5";
 
   return (
     <div>
-      <h1 className="mt-20 text-white text-2xl lg:text-4xl font-medium flex justify-center items-center ">
+      <h1 className="mt-20 text-white text-lg lg:text-4xl font-medium flex justify-center items-center ">
         Tic Tac Toe Game Using
         <span className="text-[#31373a] pl-3">React</span>
       </h1>
@@ -97,7 +97,7 @@ function TicTacToe() {
         </div>
       </div>
       {winner && (
-        <p className="text-[#31373a] p-3 lg:p-0 lg:mt-4 text-2xl font-bold ">
+        <p className="text-[#31373a] p-3 text-xl lg:p-0 lg:mt-4 lg:text-2xl font-bold ">
           {winner === "x"
             ? "Player X wins!"
             : winner === "o"
@@ -106,7 +106,7 @@ function TicTacToe() {
         </p>
       )}
       <button
-        className="w-20 h-10 text-lg rounded-md lg:w-28 lg:h-12 lg:text-2xl  border-none outline-none cursor-pointer lg:rounded-lg bg-[white] text-[#3f474b] font-medium lg:mt-5  hover:bg-[#31373a] hover:text-white duration-200"
+        className="w-20 h-8 text-lg rounded-md lg:w-28 lg:h-12 lg:text-2xl  border-none outline-none cursor-pointer lg:rounded-lg bg-[white] text-[#3f474b] font-medium lg:mt-5  hover:bg-[#31373a] hover:text-white duration-200"
         onClick={resetGame}
       >
         Reset
