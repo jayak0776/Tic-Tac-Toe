@@ -72,7 +72,7 @@ function TicTacToe() {
 
   return (
     <div>
-      <h1 className="mt-20 text-white text-lg lg:text-4xl font-medium flex justify-center items-center ">
+      <h1 className="mt-20 text-white text-lg lg:text-4xl font-semibold flex justify-center items-center ">
         Tic Tac Toe Game Using
         <span className="text-[#31373a] pl-3">React</span>
       </h1>
